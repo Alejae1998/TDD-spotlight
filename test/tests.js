@@ -95,5 +95,13 @@ test('this test should take in three numbers, divide the first by the second, th
 test('this test should take in three numbers and return those numbers in an array', (expect) => {
     const expected = [8, 4, 5];
     const actual = returnAsAnArray(8, 4, 5);
-    expect.equal(actual, expected);
+    expect.deepEqual(actual, expected);
+
+    const expected2 = [6, 7, 8];
+    const actual2 = returnAsAnArray(6, 7, 8);
+    expect.deepEqual(actual2, expected2);
+
+    const expected3 = [9, 10, 11];
+    const actual3 = returnAsAnArray(9, 10, 11);
+    expect.deepEqual(actual3, expected3);
 });
