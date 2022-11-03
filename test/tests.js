@@ -11,7 +11,7 @@ import {
 
 const { test, skip } = QUnit;
 
-skip('this test should pass', (expect) => {
+test('this test should pass', (expect) => {
     const expected = 'hello michelle';
 
     const actual = myFunction('michelle');
@@ -113,4 +113,12 @@ test('this test should take in three numbers and return those numbers mushed tog
     const actual = returnAsAString(8, 4, 5);
 
     expect.equal(actual, expected);
+
+    const expected2 = '123';
+    const actual2 = returnAsAString(1, 2, 3);
+    expect.equal(actual2, expected2);
+
+    const expected3 = '456';
+    const actual3 = returnAsAString(4, 5, 6);
+    expect.equal(actual3, expected3);
 });
