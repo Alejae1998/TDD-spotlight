@@ -142,7 +142,15 @@ test("this test should take in two numbers and return a greeting announcing that
 test('this test should take an array and return the second item in the array', (expect) => {
     const expected = 'apple';
 
-    const actual = getSecondItem('kiwi, apple, orange, plum');
+    const actual = getSecondItem(['kiwi', 'apple', 'orange', 'plum']);
 
     expect.deepEqual(actual, expected);
+
+    const expected2 = 'chicken';
+    const actual2 = getSecondItem(['cow', 'chicken', 'goat']);
+    expect.equal(actual2, expected2);
+
+    const expected3 = 'water';
+    const actual3 = getSecondItem(['coffee', 'water', 'tea']);
+    expect.equal(actual3, expected3);
 });
