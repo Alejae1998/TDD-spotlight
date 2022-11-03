@@ -81,4 +81,12 @@ test('this test should take in three numbers, divide the first by the second, th
     const actual = divideThenMultiply(8, 4, 5);
 
     expect.equal(actual, expected);
+    const expected2 = 4;
+    const actual2 = divideThenMultiply(6, 3, 2);
+    expect.equal(actual2, expected2);
+
+    const expected3 = 16;
+
+    const actual3 = divideThenMultiply(8, 2, 4);
+    expect.equal(actual3, expected3);
 });
