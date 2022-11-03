@@ -160,4 +160,12 @@ test("this test should should take an array and return the LAST item in the arra
     const expected = 'plum';
     const actual = getLastItem(['kiwi', 'apple', 'orange', 'plum']);
     expect.equal(actual, expected);
+
+    const expected2 = 'fish';
+    const actual2 = getLastItem(['cat', 'dog', 'bird', 'fish']);
+    expect.equal(actual2, expected2);
+
+    const expected3 = 'winter';
+    const actual3 = getLastItem(['winter', 'spring', 'summer', 'winter']);
+    expect.equal(actual3, expected3);
 });
