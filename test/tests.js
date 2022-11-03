@@ -126,8 +126,14 @@ test('this test should take in three numbers and return those numbers mushed tog
 
 test("this test should take in two numbers and return a greeting announcing that the sum of those numbers is today's lucky number", (expect) => {
     const expected = 'Hello! Your lucky number for the day is 12.';
-
     const actual = makeLuckyGreeting(8, 4);
-
     expect.equal(actual, expected);
+
+    const expected2 = 'Hello! Your lucky number for the day is 2.';
+    const actual2 = makeLuckyGreeting(1, 1);
+    expect.equal(actual2, expected2);
+
+    const expected3 = 'Hello! Your lucky number for the day is 6.';
+    const actual3 = makeLuckyGreeting(3, 3);
+    expect.equal(actual3, expected3);
 });
