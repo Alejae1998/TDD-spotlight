@@ -48,10 +48,16 @@ test('this test should return a new string that adds three exclamation points', 
 
 test('this test should take a number and multiply by seven', (expect) => {
     const expected = 28;
-
     const actual = multiplyBySeven(4);
-
     expect.equal(actual, expected);
+
+    const expected2 = 14;
+    const actual2 = multiplyBySeven(2);
+    expect.equal(actual2, expected2);
+
+    const expected3 = 21;
+    const actual3 = multiplyBySeven(3);
+    expect.equal(actual3, expected3);
 });
 
 test('this test should take in a number and multiply it by twelve then cut the result in half', (expect) => {
