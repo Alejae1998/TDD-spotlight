@@ -30,5 +30,13 @@ skip('this test should be skipped', (expect) => {
 test('this test should return a new string that adds three exclamation points', (expect) => {
     const expected = 'bunny rabbit!!!';
     const actual = addExclamationPoints('bunny rabbit');
-    expect.equal(actual, expected, 'bunny rabbit');
+    expect.equal(actual, expected, 'bunny rabbit!!!');
+
+    const expected2 = 'alejandra!!!';
+    const actual2 = addExclamationPoints('alejandra');
+    expect.equal(actual2, expected2, 'alejandra!!!');
+
+    const expected3 = 'michelle!!!';
+    const actual3 = addExclamationPoints('michelle');
+    expect.equal(actual3, expected3, 'michelle!!!');
 });
