@@ -1,5 +1,5 @@
-export function myFunction() {
-    return true;
+export function myFunction(str) {
+    return `hello ${str}`;
 }
 // This function should take a string and add return an new string that adds three exclamation points to the argument.
 /* 
